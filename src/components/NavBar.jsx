@@ -34,7 +34,7 @@ export default function NavBar({ setIsDrop, isDrop }) {
           </span>
         </a>
       </div>
-      <button className="min-[949px]:hidden" onClick={() => setIsDrop(!isDrop)}>
+      <button className="min-[949px]:hidden relative z-30" onClick={() => setIsDrop(!isDrop)}>
         <img
           src={Bars}
           className={`w-9 transition-all duration-500 ${
