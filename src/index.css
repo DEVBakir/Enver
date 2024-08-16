@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #19191b;
+}
+
+* {
+  font-family: "Montserrat", serif;
+  box-sizing: border-box;
+}
+
+.navbar ul li a,
+ul.navbar li a {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  @apply hover:text-[#5454D4] hover:opacity-100 opacity-70 transition-all;
+}
+
+.rec {
+  position: absolute;
+  width: 260px;
+  height: 1200px;
+  top: -311px;
+  background: linear-gradient(
+    180deg,
+    rgba(84, 84, 212, 0.27) 0%,
+    rgba(84, 84, 212, 0.1134) 100%
+  );
+  filter: blur(160px);
+  border-radius: 154.972px;
+  transform: rotate(-54.37deg);
+}
+
+.cadre {
+  position: absolute;
+  width: 340.34px;
+  height: 340.34px;
+  z-index: -1;
+  left: 106px;
+  top: 197px;
+  border: 2px solid #ffffff;
+  border-radius: 22.179px;
+  transform: rotate(23.64deg);
+}
+
+@media screen and (max-width: 1087px) {
+  /* Add your styles here */
+
+  .cadre {
+    width: 300.34px;
+    height: 300.34px;
+    left: 98px;
+    top: 178px;
+  }
+  .floating {
+    height: 580px;
+  }
+  .floating > img {
+    scale: 0.82;
+  }
+  /* You can add as many selectors and styles as needed */
+}
+
+@media screen and (max-width: 975px) {
+  /* Add your styles here */
+
+  .cadre {
+    width: 265.34px;
+    height: 265.34px;
+    left: 88px;
+    top: 166px;
+  }
+
+  .floating > img {
+    scale: 0.8;
+  }
+
+  .floating {
+    height: 520px;
+  }
+  /* You can add as many selectors and styles as needed */
+}
+
+@media screen and (max-width: 855px) {
+  /* Add your styles here */
+
+  .cadre {
+    width: 234.34px;
+    height: 234.34px;
+    left: 82px;
+    top: 140px;
+  }
+  .floating > img {
+    scale: 0.76;
+  }
+
+  /* You can add as many selectors and styles as needed */
+}
+@media screen and (max-width: 730px) {
+  /* Add your styles here */
+
+  .floating > img {
+    scale: 0.86;
+  }
+
+  /* You can add as many selectors and styles as needed */
+}
+
+@media screen and (min-width: 949px) {
+  /* Add your styles here */
+ ul.navbar {
+  display: none;
+ }
+
+  /* You can add as many selectors and styles as needed */
+}
+
+.home {
+  min-height: calc(100vh - 100px);
+}
+@media screen and (min-height: 790px) {
+  /* Add your styles here */
+
+  .home {
+    min-height: 780px;
+  }
+
+  /* You can add as many selectors and styles as needed */
+}
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.floating > img {
+  animation: float 5s ease-in-out infinite;
+  /* Adjust the following properties to your liking */
+  animation-delay: var(--delay, 0s); /* Use a CSS variable to introduce delay */
+  animation-direction: alternate; /* Change the animation direction */
+}
