@@ -19,7 +19,7 @@ function Home() {
         </p>
         <Button text="Our Services" />
       </div>
-      <div className="relative floating h-fit ">
+      <div className="relative floating h-fit">
         <img
           src={vector1}
           className="top-20  -left-8 -translate-x-8 absolute"
@@ -30,8 +30,8 @@ function Home() {
         />
         <img src={vector3} className="top-16  right-0 absolute" />
         <img src={vector4} className="bottom-6  right-0 absolute" />
-        <div className="relative w-[500px] max-[1087px]:w-[450px] max-[975px]:w-[390px] max-[855px]:w-[315px]  h-[600px] overflow-hidden top-5  ">
-          <div className="absolute -top-[80px] -right-[76px] max-[1087px]:-right-[50px] max-[1087px]:-top-[50px]  w-[632px] max-[1087px]:w-[550px] max-[975px]:w-[490px] max-[855px]:w-[415px] max-[855px]:-top-[0px] ">
+        <div className="relative w-[500px] max-[1087px]:w-[450px] max-[975px]:w-[390px] max-[855px]:w-[315px]  h-[600px] overflow-hidden   ">
+          <div className="absolute -top-[80px] -right-[76px] max-[1087px]:-right-[50px] max-[1087px]:-top-[50px]  w-[630px] max-[1087px]:w-[550px] max-[975px]:w-[490px] max-[855px]:w-[415px] max-[855px]:-top-[0px] ">
             <img src={HomeImg} />
             <div className="cadre"></div>
           </div>

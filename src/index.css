@@ -111,9 +111,9 @@ ul.navbar li a {
 
 @media screen and (min-width: 949px) {
   /* Add your styles here */
- ul.navbar {
-  display: none;
- }
+  ul.navbar {
+    display: none;
+  }
 
   /* You can add as many selectors and styles as needed */
 }

@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import { useState } from "react";
+import Presentation from "./components/Presentation";
 
 function App() {
   const [isDrop, setIsDrop] = useState(false);
@@ -11,6 +12,7 @@ function App() {
         <NavBarMobile isDrop={isDrop} />
         <NavBar isDrop={isDrop} setIsDrop={setIsDrop} />
         <Home />
+        <Presentation />
         <div className="rec"></div>
       </div>
     </>
