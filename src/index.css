@@ -3,8 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #19191b;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
 }
 
 * {
