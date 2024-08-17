@@ -1,5 +1,6 @@
 import Button from "./Button";
-import HomeImg from "../assets/home.svg";
+import HomeImg from "../assets/home.png";
+
 import vector1 from "../assets/Vector 13(2).svg";
 import vector2 from "../assets/Group 162527.svg";
 import vector3 from "../assets/Group 162526.svg";
